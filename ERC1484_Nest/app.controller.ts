@@ -16,11 +16,12 @@ export class AppController
   
   
   @Get('/identity/ein')
-  getIdentityByEIN(@Body('value') value: number) 
+  getIdentityByEIN(@Body('ein') ein: number) 
   {
-    return this.appService.getIdentityByEIN(value);
+    return this.appService.getIdentityByEIN(ein);
   }
 
 
 
 }
+
